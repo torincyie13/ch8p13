@@ -23,6 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblUSPSPercent = New System.Windows.Forms.Label()
+        Me.lblUPSPercent = New System.Windows.Forms.Label()
+        Me.lblFedexPercent = New System.Windows.Forms.Label()
         Me.lblUSPSTotal = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblUPSTotal = New System.Windows.Forms.Label()
@@ -31,9 +34,6 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblTotalShipped = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblFedexPercent = New System.Windows.Forms.Label()
-        Me.lblUPSPercent = New System.Windows.Forms.Label()
-        Me.lblUSPSPercent = New System.Windows.Forms.Label()
         Me.btnDisplay = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -52,130 +52,135 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.lblTotalShipped)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(56, 43)
+        Me.GroupBox1.Location = New System.Drawing.Point(64, 57)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(215, 318)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(246, 424)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'lblUSPSPercent
+        '
+        Me.lblUSPSPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUSPSPercent.Location = New System.Drawing.Point(134, 359)
+        Me.lblUSPSPercent.Name = "lblUSPSPercent"
+        Me.lblUSPSPercent.Size = New System.Drawing.Size(91, 33)
+        Me.lblUSPSPercent.TabIndex = 10
+        '
+        'lblUPSPercent
+        '
+        Me.lblUPSPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUPSPercent.Location = New System.Drawing.Point(134, 261)
+        Me.lblUPSPercent.Name = "lblUPSPercent"
+        Me.lblUPSPercent.Size = New System.Drawing.Size(91, 33)
+        Me.lblUPSPercent.TabIndex = 9
+        '
+        'lblFedexPercent
+        '
+        Me.lblFedexPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblFedexPercent.Location = New System.Drawing.Point(134, 155)
+        Me.lblFedexPercent.Name = "lblFedexPercent"
+        Me.lblFedexPercent.Size = New System.Drawing.Size(91, 33)
+        Me.lblFedexPercent.TabIndex = 8
         '
         'lblUSPSTotal
         '
         Me.lblUSPSTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUSPSTotal.Location = New System.Drawing.Point(19, 269)
+        Me.lblUSPSTotal.Location = New System.Drawing.Point(22, 359)
         Me.lblUSPSTotal.Name = "lblUSPSTotal"
-        Me.lblUSPSTotal.Size = New System.Drawing.Size(80, 25)
+        Me.lblUSPSTotal.Size = New System.Drawing.Size(91, 33)
         Me.lblUSPSTotal.TabIndex = 7
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(19, 243)
+        Me.Label7.Location = New System.Drawing.Point(22, 324)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 15)
+        Me.Label7.Size = New System.Drawing.Size(46, 20)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "USPS:"
         '
         'lblUPSTotal
         '
         Me.lblUPSTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUPSTotal.Location = New System.Drawing.Point(19, 196)
+        Me.lblUPSTotal.Location = New System.Drawing.Point(22, 261)
         Me.lblUPSTotal.Name = "lblUPSTotal"
-        Me.lblUPSTotal.Size = New System.Drawing.Size(80, 25)
+        Me.lblUPSTotal.Size = New System.Drawing.Size(91, 33)
         Me.lblUPSTotal.TabIndex = 5
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(19, 169)
+        Me.Label5.Location = New System.Drawing.Point(22, 225)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(31, 15)
+        Me.Label5.Size = New System.Drawing.Size(38, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "UPS:"
         '
         'lblFedexTotal
         '
         Me.lblFedexTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblFedexTotal.Location = New System.Drawing.Point(19, 116)
+        Me.lblFedexTotal.Location = New System.Drawing.Point(22, 155)
         Me.lblFedexTotal.Name = "lblFedexTotal"
-        Me.lblFedexTotal.Size = New System.Drawing.Size(80, 25)
+        Me.lblFedexTotal.Size = New System.Drawing.Size(91, 33)
         Me.lblFedexTotal.TabIndex = 3
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(19, 91)
+        Me.Label3.Location = New System.Drawing.Point(22, 121)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 15)
+        Me.Label3.Size = New System.Drawing.Size(51, 20)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "FedEx:"
         '
         'lblTotalShipped
         '
         Me.lblTotalShipped.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalShipped.Location = New System.Drawing.Point(19, 48)
+        Me.lblTotalShipped.Location = New System.Drawing.Point(22, 64)
         Me.lblTotalShipped.Name = "lblTotalShipped"
-        Me.lblTotalShipped.Size = New System.Drawing.Size(80, 25)
+        Me.lblTotalShipped.Size = New System.Drawing.Size(91, 33)
         Me.lblTotalShipped.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(19, 23)
+        Me.Label1.Location = New System.Drawing.Point(22, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 15)
+        Me.Label1.Size = New System.Drawing.Size(102, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total shipped:"
         '
-        'lblFedexPercent
-        '
-        Me.lblFedexPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblFedexPercent.Location = New System.Drawing.Point(117, 116)
-        Me.lblFedexPercent.Name = "lblFedexPercent"
-        Me.lblFedexPercent.Size = New System.Drawing.Size(80, 25)
-        Me.lblFedexPercent.TabIndex = 8
-        '
-        'lblUPSPercent
-        '
-        Me.lblUPSPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUPSPercent.Location = New System.Drawing.Point(117, 196)
-        Me.lblUPSPercent.Name = "lblUPSPercent"
-        Me.lblUPSPercent.Size = New System.Drawing.Size(80, 25)
-        Me.lblUPSPercent.TabIndex = 9
-        '
-        'lblUSPSPercent
-        '
-        Me.lblUSPSPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUSPSPercent.Location = New System.Drawing.Point(117, 269)
-        Me.lblUSPSPercent.Name = "lblUSPSPercent"
-        Me.lblUSPSPercent.Size = New System.Drawing.Size(80, 25)
-        Me.lblUSPSPercent.TabIndex = 10
-        '
         'btnDisplay
         '
-        Me.btnDisplay.Location = New System.Drawing.Point(306, 66)
+        Me.btnDisplay.Location = New System.Drawing.Point(350, 88)
+        Me.btnDisplay.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDisplay.Name = "btnDisplay"
-        Me.btnDisplay.Size = New System.Drawing.Size(91, 33)
+        Me.btnDisplay.Size = New System.Drawing.Size(104, 44)
         Me.btnDisplay.TabIndex = 1
         Me.btnDisplay.Text = "&Display"
         Me.btnDisplay.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(306, 116)
+        Me.btnExit.Location = New System.Drawing.Point(350, 155)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(91, 33)
+        Me.btnExit.Size = New System.Drawing.Size(104, 44)
         Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "&Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(433, 404)
+        Me.ClientSize = New System.Drawing.Size(495, 539)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnDisplay)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
