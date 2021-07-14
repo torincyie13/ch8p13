@@ -19,8 +19,6 @@
 
         lblTotalShipped.Text = intTotalShipped
 
-        intRow = 0
-        intTotalFedexShipped = 0
         For intRow = 0 To strShipped.GetLength(0) - 1
             intTotalFedexShipped += strShipped(intRow, 0)
         Next
